@@ -41,7 +41,7 @@ e.g. To install with script, with the tab close button left hand side: `bash ins
 Make sure to right click and Customize Toolbar. From here, drag the new tab button up to the toolbar out of the tab section.
 
 Install with the following modifications for Safari-like experience
-` bash ./install.sh -c -n -s -e -p`
+` bash ./install.sh -c -n -s -p`
 
 This will give you a look like this:
 ![Preview](https://private-user-images.githubusercontent.com/6800453/391326706-1bb5ffe4-3320-4a8a-8702-648ce3b9f23c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzMwNTE0OTcsIm5iZiI6MTczMzA1MTE5NywicGF0aCI6Ii82ODAwNDUzLzM5MTMyNjcwNi0xYmI1ZmZlNC0zMzIwLTRhOGEtODcwMi02NDhjZTNiOWYyM2MucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MTIwMSUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDEyMDFUMTEwNjM3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTZjMzgyM2Y0NzMzZmY2NjE5ZmU4MDhiYzc2OGQyYzcwZjE2NWIwNzhmNmM2ZmQ1MTMyZWFhYWI1YzRkNWI0MyZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.4pM0PJgYSjpWUnJRiIYVphkyIMKA1wnGDALqaIHXgk8)
