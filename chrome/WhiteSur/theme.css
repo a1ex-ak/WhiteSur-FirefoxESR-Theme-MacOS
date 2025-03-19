@@ -28,6 +28,8 @@
 
 /* Set theme version text in customization panel */
 #customization-footer::before {
-	content: "Firefox WhiteSur theme";
-	padding: 9px;
+	background: url("icons/icon.svg") no-repeat;
+	background-size: contain;
+	content: "Firefox WhiteSur MacOS theme";
+	padding: 10px 10px 10px 50px;
 }
