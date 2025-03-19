@@ -118,11 +118,6 @@ toolbarspring {
 	--toolbarbutton-active-background: transparent !important;
 	--toolbarbutton-hover-background: transparent !important;
 	-moz-appearance: none !important;
-	/*background: var(--gnome-button-background) !important;*/
-	/*box-shadow: var(--gnome-button-box-shadow) !important;*/
-	/*border: 1px solid var(--gnome-button-border-color) !important;*/
-	/*border-left-width: 0 !important;*/
-	/*border-bottom-color: var(--gnome-button-border-accent-color) !important;*/
 	padding: 0 2px !important;
 	min-height: 34px !important;
 	min-width: 34px !important;
@@ -179,10 +174,12 @@ toolbarspring {
 .search-go-button:hover, #urlbar-go-button.urlbar-icon:hover{
 	background-color: var(--urlbar-box-hover-bgcolor) !important;
 }
+
 /* fix size of search arrow */
 .urlbar-page-action, #urlbar-go-button, .search-go-button {
 	padding: 1px !important;
   }
+
 /* Fix for firefox v92 onwards that changed icon size on MacOS*/
 .urlbar-page-action {
 padding: inherit !important;
@@ -195,7 +192,7 @@ padding: inherit !important;
 }
 .searchbar-search-button[open] #idenity-box.extensionPage #identity-permission-box,
 .searchbar-search-button:hover:active #idenity-box.extensionPage #identity-permission-box,
- #identity-box.extensionPage #identity-permission-box,
+#identity-box.extensionPage #identity-permission-box,
 #urlbar[usertyping] #identity-box.extensionPage #identity-permission-box,
 #urlbar:is([focused], [open])  #identity-box.extensionPage #identity-permission-box{
 	visibility: collapse;
