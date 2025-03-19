@@ -10,7 +10,7 @@ A <code>MacOS</code> & <code>Windows</code> Firefox theme to look more like Safa
 
 Aim is to make Firefox look more like MacOS Safari.\
 This is a CSS theme adapted to work on MacOS from the Linux GTK theme.\
-Based on https://github.com/vinceliuice/WhiteSur-firefox-theme \
+Based on https://github.com/vinceliuice/WhiteSur-firefox-theme and https://github.com/AdamXweb/WhiteSurFirefoxThemeMacOS \
 (This is a quick modification, and is not written from scratch.)
 
 ## Installation (MacOS)
