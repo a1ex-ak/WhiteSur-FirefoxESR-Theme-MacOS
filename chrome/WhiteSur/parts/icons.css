@@ -27,12 +27,15 @@
 	width: 16px;
 	margin-top: -2px !important;
 }
+
 .protections-popup-category::after {
 	content: url("../icons/pan-start-symbolic.svg") !important;
 }
+
 .identity-popup-content-blocking-category::after {
 	content: url("../icons/pan-start-symbolic.svg") !important;
 }
+
 #identity-popup-security-expander .button-icon {
 	list-style-image: url("../icons/pan-start-symbolic.svg") !important;
 }
@@ -53,6 +56,7 @@
 menu[disabled] > .menu-right {
 	opacity: 0.3;
 }
+
 menu:not([disabled]):hover > .menu-right {
 	filter: invert(100%) brightness(200%);
 }
@@ -386,6 +390,11 @@ menuitem[type="radio"]:not([disabled="true"]):hover .menu-iconic-icon {
 
 #tracking-protection-icon-animatable-image {
 	background-image: url("../icons/tracking-protection-animatable.svg") !important;
+}
+
+#firefox-view-button {
+	list-style-image: url("../icons/firefox-view.svg") !important;
+	filter: invert(1);
 }
 
 .bookmark-item[container] {
