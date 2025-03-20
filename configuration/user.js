@@ -8,9 +8,6 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 // Set UI density to normal
 user_pref("browser.uidensity", 0);
 
-// Enable SVG context-propertes
-user_pref("svg.context-properties.content.enabled", true);
-
 // Enable CSD
 user_pref("browser.tabs.drawInTitlebar", true);
 
