@@ -380,6 +380,11 @@ menuitem[type="radio"]:not([disabled="true"]):hover .menu-iconic-icon {
 	list-style-image: url("../icons/reader-mode.svg") !important;
 }
 
+#picture-in-picture-button > .urlbar-icon {
+	list-style-image: url("../icons/picture-in-picture-open.svg") !important;
+	filter: invert(1);
+}
+
 #permissions-granted-icon {
 	list-style-image: url("../icons/permissions-granted.svg") !important;
 }
@@ -394,7 +399,6 @@ menuitem[type="radio"]:not([disabled="true"]):hover .menu-iconic-icon {
 
 #firefox-view-button {
 	list-style-image: url("../icons/firefox-view.svg") !important;
-	filter: invert(1);
 }
 
 .bookmark-item[container] {
