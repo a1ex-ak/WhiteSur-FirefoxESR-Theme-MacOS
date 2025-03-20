@@ -82,7 +82,6 @@ fi
     echo "user_pref(\"browser.uidensity\", 0);" >>                                      "${d}/prefs.js"
     echo "user_pref(\"layers.acceleration.force-enabled\", true);" >>                   "${d}/prefs.js"
     echo "user_pref(\"mozilla.widget.use-argb-visuals\", true);" >>                     "${d}/prefs.js"
-    echo "user_pref(\"svg.context-properties.content.enabled\", true);" >>              "${d}/prefs.js"
     echo "user_pref(\"ui.-moz-autofill-background\", transparent);" >>                  "${d}/prefs.js"
   done
 }
