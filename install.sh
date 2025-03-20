@@ -24,7 +24,7 @@ while getopts 'c,w,p,u,n,v,e,s,r:f:l' flag; do
 	esac
 done
 
-echo -en "$COL_GREEN WhiteSur-based Firefox theme. $COL_RESET"
+echo -en "$COL_GREEN WhiteSur-based Firefox MacOS theme. $COL_RESET"
 echo -en "\n"
 echo -en "\n"
 echo -e "${bold}Firefox MacOS theme installer"
