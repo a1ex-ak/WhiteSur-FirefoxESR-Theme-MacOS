@@ -101,6 +101,14 @@ panelview {
 	margin-top: 10px !important;
 }
 
+/* Remove unwanted separators */
+.panel-header + toolbarseparator,
+#identity-popup-mainView-panel-header + toolbarseparator,
+#permission-popup-mainView-panel-header + toolbarseparator,
+#protections-popup-mainView-panel-header-section + toolbarseparator {
+	display: none !important;
+}
+
 /* Style popovers menu buttons */
 .subviewbutton:not(.subviewbutton-back),
 .toolbarbutton-1,
@@ -135,6 +143,54 @@ panelview {
 .protections-popup-category:not([disabled]):hover,
 .identity-popup-content-blocking-category:not([disabled]):hover {
 	background: var(--gnome-popover-button-hover-background) !important;
+}
+
+/* Menu buttons disabled */
+menuitem[disabled="true"],
+menupopup menu[disabled="true"],
+menuitem[disabled="true"][_moz-menuactive],
+menupopup menu[disabled="true"][_moz-menuactive],
+.subviewbutton[disabled="true"],
+.subviewbutton:not(#appMenu-fxa-label2)[disabled="true"],
+.toolbarbutton-1[disabled="true"],
+.protections-popup-category[disabled="true"],
+.identity-popup-content-blocking-category[disabled="true"] {
+	opacity: 0.35 !important;
+	background-image: none !important;
+	background-color: transparent !important;
+}
+
+#context-navigation menuitem.menuitem-iconic[disabled="true"] {
+	opacity: 1 !important;
+	color: var(--gnome-inactive-toolbar-color) !important;
+	background-image: var(--gnome-button-disabled-background) !important;
+	border-color: var(--gnome-button-disabled-border-color) !important;
+	box-shadow: none !important;
+}
+
+/* Menu buttons hover */
+menuitem:not([disabled="true"]):is(:hover, [_moz-menuactive]),
+menupopup menu:not([disabled="true"]):is(:hover, [_moz-menuactive]),
+.subviewbutton:not([disabled="true"], #appMenu-zoom-controls2, #appMenu-fxa-label2, #downloadsHistory):hover,
+.protections-popup-footer-button:not([disabled="true"]):hover,
+#protections-popup-show-report-stack:hover .protections-popup-footer-button,
+.protections-popup-category:not([disabled="true"]):hover,
+.identity-popup-content-blocking-category:not([disabled="true"]):hover,
+#PlacesToolbar .bookmark-item:is(:hover, [open], [_moz-menuactive]),
+#downloadsPanel-mainView .download-state:hover {
+	background-image: none !important;
+	background-color: var(--gnome-popover-button-hover-background) !important;
+}
+
+/* Menu buttons active */
+.subviewbutton:not([disabled="true"], #appMenu-zoom-controls2, #appMenu-fxa-label2, #downloadsHistory):active,
+.protections-popup-footer-button:not([disabled="true"]):active,
+#protections-popup-show-report-stack:active .protections-popup-footer-button,
+.protections-popup-category:not([disabled="true"]):active,
+.identity-popup-content-blocking-category:not([disabled="true"]):active,
+#downloadsPanel-mainView .download-state:active {
+	background-image: none !important;
+	background-color: var(--gnome-popover-button-active-background) !important;
 }
 
 /* Style popover separators */
@@ -266,4 +322,9 @@ toolbarbutton.bookmark-item[open="true"] {
 browser[primary="true"][tabDialogShowing="true"],
 #main-window[window-modal-open="true"] > body > #browser{
   filter: blur(5px)
+}
+
+/* Fixes for menu scrollbox */
+arrowscrollbox.menupopup-arrowscrollbox {
+	height: 100%;
 }
