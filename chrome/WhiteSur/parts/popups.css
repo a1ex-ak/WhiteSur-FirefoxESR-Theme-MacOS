@@ -49,29 +49,31 @@ panel[type=arrow] {
 
 /* Style popovers */
 .panel-arrowcontent .panel-arrowcontent,
-.panel-header,
-.PanelUI-subView,
-.panel-subview-body,
-#widget-overflow-mainView,
-#protections-popup-footer,
+.panel-header, .PanelUI-subView,
+.panel-subview-body, #widget-overflow-mainView, #protections-popup-footer,
 panelview {
-	border: 0 !important;
-	background: transparent !important;
+	background: none !important;
 }
 
-.panel-arrowcontent {
+panelview {
 	--panel-background: var(--gnome-popover-background) !important;
 	font:inherit !important;
 	border-color: var(--gnome-popover-border-color) !important;
 	border-radius: 9px !important;
-	/* box-shadow: var(--gnome-popover-shadow) !important; */
+	box-shadow: var(--gnome-popover-shadow) !important;
 	padding: 12px !important;
 	color: var(--gnome-toolbar-color) !important;
 }
 
-.panel-arrow {
-	fill: var(--gnome-popover-background) !important;
-	stroke: var(--gnome-popover-border-color) !important;
+#customization-panelWrapper > .panel-arrowcontent {
+	box-shadow: var(--gnome-popover-shadow) !important;
+	border-radius: 12px !important;
+	background: var(--gnome-menu-background) !important;
+}
+
+#customization-panelWrapper > .panel-arrowbox > .panel-arrow[side="top"] {
+	fill: var(--gnome-menu-background) !important;
+	stroke: transparent !important;
 }
 
 .PanelUI-subView toolbarseparator:not([orient="vertical"]) {
@@ -79,24 +81,34 @@ panelview {
 }
 
 .panel-header {
-	padding: 10px 0 10px 0 !important;
+	padding: 0 0 10px 0 !important;
 }
-
+.panel-header + toolbarseparator,
+#identity-popup-mainView-panel-header + toolbarseparator,
+#permission-popup-mainView-panel-header + toolbarseparator,
+#protections-popup-mainView-panel-header-section + toolbarseparator {
+	display: none !important;
+}
 .panel-footer {
 	background-color: transparent !important;
 	display: flex;
 	justify-content: flex-end;
 	padding-top: 0px !important;
 }
-
+.panel-footer.panel-footer-menulike {
+	border-top: 0 !important;
+	margin-top: 8px !important;
+}
 .panel-footer toolbarseparator {
 	display: none !important;
 }
-
-.panel-subview-body {
+.proton-zap {
+	border-image: unset !important;
+}
+.panel-subview-body,
+.panel-subview-body > .panel-subview-body {
 	padding: 0 !important;
 }
-
 .panel-subview-footer {
 	margin-top: 10px !important;
 }
