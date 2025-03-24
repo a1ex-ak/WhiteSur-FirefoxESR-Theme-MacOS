@@ -61,7 +61,7 @@ panelview {
 	border-color: var(--gnome-popover-border-color) !important;
 	border-radius: 9px !important;
 	box-shadow: var(--gnome-popover-shadow) !important;
-	padding: 12px !important;
+	padding: 1px !important;
 	color: var(--gnome-toolbar-color) !important;
 }
 
