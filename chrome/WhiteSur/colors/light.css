@@ -153,6 +153,9 @@
 	&[privatebrowsingmode="temporary"] {
 		--gnome-private-accent: #78aeed;
 
+		/* URLbar */
+		--gnome-urlbar-background: #53377a !important;
+
 		/* Toolbars */
 		--gnome-toolbar-background: #53377a !important;
 		/*--gnome-inactive-toolbar-background: var(--gnome-inactive-headerbar-background);*/
