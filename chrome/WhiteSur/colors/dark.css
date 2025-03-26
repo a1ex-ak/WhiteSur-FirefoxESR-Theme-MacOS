@@ -156,7 +156,10 @@
 	/* Private window colors */
 	&[privatebrowsingmode="temporary"] {
 		--gnome-private-accent: #78aeed;
-
+		
+		/* URLbar */
+		--gnome-urlbar-background: #53377a !important;
+		
 		/* Toolbars */
 		--gnome-toolbar-background: #53377a !important;
 		/*--gnome-inactive-toolbar-background: var(--gnome-inactive-headerbar-background);*/
@@ -170,5 +173,12 @@
 		--gnome-tabbar-tab-active-background: #53377a; /* Hardcoded color */
 		--gnome-tabbar-tab-active-background-contrast: #86689e; /* Hardcoded color */
 		--gnome-tabbar-tab-active-hover-background: #754F93; /* Hardcoded color */
+		
+		/* Private and backdrop colors */
+			&:-moz-window-inactive {
+				--gnome-tabbar-tab-hover-background: #673C87; /* Hardcoded color */
+				--gnome-tabbar-tab-active-background: #683F89; /* Hardcoded color */
+		}	
+
 	}
 }
