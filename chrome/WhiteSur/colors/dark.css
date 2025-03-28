@@ -157,20 +157,20 @@
 	&[privatebrowsingmode="temporary"] {
 		--gnome-private-accent: #78aeed;
 		
-		/* URLbar */
-		--gnome-urlbar-background: #53377a !important;
+		/* URLbar #53377a */
+		--gnome-urlbar-background: #8000d7 !important;
 		
 		/* Toolbars */
-		--gnome-toolbar-background: #53377a !important;
+		--gnome-toolbar-background: #8000d7 !important;
 		/*--gnome-inactive-toolbar-background: var(--gnome-inactive-headerbar-background);*/
 		/* Menus */
 		--gnome-menu-background: #383838;
 		/* Header bar */
-		--gnome-headerbar-background: #53377a !important;
+		--gnome-headerbar-background: #8000d7 !important;
 		/*--gnome-inactive-headerbar-background: var(--gnome-private-toolbar-background);*/
 		/* Tabs */
 		--gnome-tabbar-tab-hover-background: #6C438C; /* Hardcoded color */
-		--gnome-tabbar-tab-active-background: #53377a; /* Hardcoded color */
+		--gnome-tabbar-tab-active-background: #8000d7; /* Hardcoded color */
 		--gnome-tabbar-tab-active-background-contrast: #86689e; /* Hardcoded color */
 		--gnome-tabbar-tab-active-hover-background: #754F93; /* Hardcoded color */
 		
