@@ -136,6 +136,7 @@ toolbar .toolbarbutton-1 {
 		border-radius: 0 !important;
 	}
 }
+
 /* bookmark-item */
 toolbarbutton.bookmark-item {
 	padding: 3px 6px !important;
@@ -143,4 +144,11 @@ toolbarbutton.bookmark-item {
 	border-radius: 3px !important;
 	max-height: 23px !important;
 	color: var(--gnome-toolbar-color) !important;
+}
+
+toolbarbutton.bookmark-item:not(.subviewbutton) {
+  max-width: 15em;
+  appearance: none;
+  outline: var(--toolbarbutton-outline);
+  outline-offset: var(--toolbarbutton-outline-offset);
 }
