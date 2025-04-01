@@ -9,7 +9,7 @@ menupopup {
 	background: var(--gnome-menu-background) !important;
 	border: 1px solid var(--gnome-menu-border-color) !important;
 	border-radius: 8px !important;
-	padding: 4px 0 !important;
+	padding: 4,5px 0 !important;
 	color: var(--gnome-toolbar-color) !important;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), inset 0 0 0 1px rgba(255, 255, 255, 0.06) !important;
 }
@@ -61,7 +61,7 @@ panelview {
 	border-color: var(--gnome-popover-border-color) !important;
 	border-radius: 9px !important;
 	box-shadow: var(--gnome-popover-shadow) !important;
-	/*padding: 1px !important;*/
+	padding: 5,5px !important;
 	color: var(--gnome-toolbar-color) !important;
 }
 
@@ -206,28 +206,43 @@ menupopup menu:not([disabled="true"]):is(:hover, [_moz-menuactive]),
 }
 
 /* Style popover separators */
-toolbarseparator,
-menuseparator {
-	border-color: var(--gnome-popover-separator-color) !important;
+toolbarseparator, menuseparator {
+	appearance: none !important;
+/*	border-color: var(--gnome-popover-separator-color) !important;*/
 }
-
-toolbarseparator:not([orient="vertical"]) {
-	margin: 8px 0 !important;
+#PlacesToolbar menupopup[placespopup="true"] menuseparator {
+	border: none !important;
+	padding: 0 !important;
 }
-
+toolbarseparator, menuseparator::before {
+	border-top: 1px solid var(--gnome-popover-separator-color) !important;
+}
+menupopup menuseparator {
+	border: none !important;
+	margin: 4px 0 !important;
+}
 toolbarseparator[orient="vertical"] {
-	margin: 0 3px !important;
+	margin: 0 4px !important;
 }
-#contentAreaContextMenu menuitem image,
-#contentAreaContextMenu menu image {
-	visibility: visible !important;
+.panel-subview-body + toolbarseparator:not([orient="vertical"]) {
+	margin: 0 0 4px !important;
 }
+panelview > toolbarseparator:not([orient="vertical"]),
+#identity-popup-clear-sitedata-footer toolbarseparator:not([orient="vertical"]),
+#identity-popup-more-info-footer toolbarseparator:not([orient="vertical"]){
+	margin: 4px 6px !important;
+}
+#identity-popup-clear-sitedata-footer toolbarseparator:not([orient="vertical"]) {
+	margin-top: 0 !important;
+}
+
 /* Webchat e.g. google meet share screen display select*/
 #webRTC-selectWindow-menulist{
 	color: var(--gnome-inactive-urlbar-color) !important;
 	background: var(--gnome-button-hover-background) !important;
 	border-radius: 5px;
 }
+
 /* Proton right click menu*/
 @media (-moz-proton) {
 	#context-navigation>.menuitem-iconic[_moz-menuactive="true"]:not([disabled="true"])>.menu-iconic-left>.menu-iconic-icon {
@@ -240,11 +255,13 @@ toolbarseparator[orient="vertical"] {
 #PanelUI-fxa {
 	padding: 8px !important;
 }
+
 /* fix menu button padding and alignment*/
 #PanelUI-menu-button {
 	padding-inline-end: 0px !important;
 	padding-left: 0px !important;
 }
+
 /* Fix alignment of menu*/
 panel[type="arrow"][side="top"],
 panel[type="arrow"][side="bottom"] {
@@ -259,25 +276,30 @@ menuseparator {
 	margin-top: 3px !important;
 	margin-bottom: 2px !important;
 }
+
 menupopup>menuitem,
 menupopup>menu {
 	padding-block: 2px !important;
 	min-height: unset !important;
 }
+
 #PlacesToolbar menupopup,
 #PlacesToolbar menu:not([disabled], :active) {
 	--arrowpanel-background: transparent !important;
 	--arrowpanel-border-radius: 0px !important;
 }
+
 #PlacesToolbar menu:[_moz-menuactive],
 #PlacesToolbar menu:active,
 toolbarbutton.bookmark-item[open="true"] {
 	background-color: var(--gnome-button-active-background) !important;
 }
+
 .bookmark-item:hover {
 	background-color: var(--gnome-popover-button-hover-background) !important;
 
 }
+
 #PlacesToolbar menuitem:hover{
 	color: var(--gnome-button-menulist-color) !important;
 } 
@@ -285,9 +307,11 @@ toolbarbutton.bookmark-item[open="true"] {
 #PlacesToolbar menupopup[placespopup="true"] {
     border: none !important;
 }
+
 #PlacesToolbar menupopup[placespopup="true"]::part(arrowscrollbox) {
     background: transparent !important;
 }
+
 .menupopup-arrowscrollbox{
 	background: transparent !important;
 	border: 0 !important;
@@ -334,6 +358,48 @@ toolbarbutton.bookmark-item[open="true"] {
 browser[primary="true"][tabDialogShowing="true"],
 #main-window[window-modal-open="true"] > body > #browser{
   filter: blur(5px)
+}
+
+/* Auto complete popups */
+panel[type="autocomplete-richlistbox"] {
+	background: none !important;
+	border: 0 !important;
+	padding: 0 !important;
+	color: var(--gnome-toolbar-color) !important;
+	margin: 0 !important;
+}
+
+.autocomplete-richlistbox {
+	margin: 0 !important;
+}
+
+#PopupAutoComplete > richlistbox > richlistitem {
+	min-height: 20px;
+	border: 0;
+	border-radius: 3px !important;
+	padding: 0 6px !important;
+}
+
+#PopupAutoComplete > richlistbox > richlistitem:hover {
+	background: var(--theme-primary-color) !important;
+	color: #ffffff !important;
+}
+
+.autocomplete-richlistitem:not([type="loginsFooter"]) {
+	color: var(--gnome-toolbar-color) !important;
+	font: menu !important;
+	margin: 0 !important;
+}
+.autocomplete-richlistitem:not([type="loginsFooter"]) .ac-site-icon {
+	fill: var(--gnome-toolbar-color) !important;
+	opacity: 0.5;
+}
+.autocomplete-richlistitem:not([type="loginsFooter"]):hover {
+	color: #fff !important;
+	background-color: Highlight !important;
+}
+.autocomplete-richlistitem:not([type="loginsFooter"]):hover .ac-site-icon {
+	fill: #fff !important;
 }
 
 /* Fixes for menu scrollbox */
