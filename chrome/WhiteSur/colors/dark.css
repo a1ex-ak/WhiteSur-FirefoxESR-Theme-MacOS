@@ -162,12 +162,12 @@
 		
 		/* Toolbars */
 		--gnome-toolbar-background: #8000d7 !important;
-		/*--gnome-inactive-toolbar-background: var(--gnome-inactive-headerbar-background);*/
+		--gnome-inactive-toolbar-background: #53377a !important;
 		/* Menus */
 		--gnome-menu-background: #383838;
 		/* Header bar */
 		--gnome-headerbar-background: #8000d7 !important;
-		/*--gnome-inactive-headerbar-background: var(--gnome-private-toolbar-background);*/
+		--gnome-inactive-headerbar-background: #53377a !important;
 		/* Tabs */
 		--gnome-tabbar-tab-hover-background: #6C438C; /* Hardcoded color */
 		--gnome-tabbar-tab-active-background: #8000d7; /* Hardcoded color */
