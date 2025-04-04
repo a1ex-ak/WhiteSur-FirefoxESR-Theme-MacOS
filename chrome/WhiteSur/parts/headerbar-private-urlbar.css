@@ -9,13 +9,13 @@
 
 :root[privatebrowsingmode="temporary"] #nav-bar toolbarspring:first-of-type:before {
 	background: url("../icons/user-not-tracked.svg") no-repeat;
-        background-size: 48px 48px;
+        background-size: 54px 54px;
 	content: "";
 	display: block;
 	position: absolute;
-        width: 48px;
-        height: 48px;
-        top: 3px;
+        width: 54px;
+        height: 54px;
+        top: 0px;
 	opacity: 0.5;
 	transform: translate(20px, 0);
 }
@@ -27,13 +27,13 @@
 @media (prefers-color-scheme: dark) {
 	:root[privatebrowsingmode="temporary"] #nav-bar toolbarspring:first-of-type:before {
 		background: url("../icons/user-not-tracked-dark.svg") no-repeat;
-		background-size: 48px 48px;
+		background-size: 54px 54px;
 		content: "";
 		display: block;
 		position: absolute;
-		width: 48px;
-		height: 48px;
-		top: 3px;
+		width: 54px;
+		height: 54px;
+		top: 0px;
 		opacity: 0.5;
 		transform: translate(20px, 0);
 	}
