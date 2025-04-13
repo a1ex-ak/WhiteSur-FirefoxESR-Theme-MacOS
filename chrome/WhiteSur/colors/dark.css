@@ -100,7 +100,7 @@
 		--gnome-inactive-urlbar-color: #d6d6d6;
 		--gnome-focused-urlbar-border-color: #338CBE;
 		--gnome-focused-urlbar-highlight-color: #006EA0;
-		--gnome-private-urlbar-background: #25003e;
+		#--gnome-private-urlbar-background: #25003e;
 
 		/* Tabs */
 		--gnome-tabbar-tab-background: #262626;
@@ -163,11 +163,14 @@
 		/* Toolbars */
 		--gnome-toolbar-background: #8000d7 !important;
 		--gnome-inactive-toolbar-background: #53377a !important;
+
 		/* Menus */
 		--gnome-menu-background: #383838;
+
 		/* Header bar */
 		--gnome-headerbar-background: #8000d7 !important;
 		--gnome-inactive-headerbar-background: #53377a !important;
+
 		/* Tabs */
 		--gnome-tabbar-tab-hover-background: #6C438C; /* Hardcoded color */
 		--gnome-tabbar-tab-active-background: #8000d7; /* Hardcoded color */
