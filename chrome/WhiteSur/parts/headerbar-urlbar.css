@@ -100,7 +100,7 @@ toolbarspring {
 .urlbarView {
 	background: var(--gnome-popover-background) !important;
 	color: var(--gnome-toolbar-color) !important;
-	margin: 2px 0 0 0 !important;
+	margin: 1px 0 0 0 !important;
 	width: 100% !important;
 	position: absolute !important;
 	box-shadow: var(--gnome-urlbar-box-shadow) !important;
