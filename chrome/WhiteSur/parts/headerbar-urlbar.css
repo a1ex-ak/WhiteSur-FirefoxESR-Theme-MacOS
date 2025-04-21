@@ -14,7 +14,8 @@
 
 /* Centre URL bar text input*/
 #urlbar-input {
-	transition: transform .1s linear;
+	/*transition: transform .1s linear;*/
+	transition: transform 0.3s cubic-bezier(0, 0.7, 0.3, 1);
 	transform: translateX(50%);
 	position: absolute;
 	height:100%;
@@ -99,7 +100,7 @@ toolbarspring {
 .urlbarView {
 	background: var(--gnome-popover-background) !important;
 	color: var(--gnome-toolbar-color) !important;
-	margin: 6px 0 0 0 !important;
+	margin: 2px 0 0 0 !important;
 	width: 100% !important;
 	position: absolute !important;
 	box-shadow: var(--gnome-urlbar-box-shadow) !important;
