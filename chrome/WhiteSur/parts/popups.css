@@ -45,6 +45,9 @@ panel[type=arrow] {
 	max-height: 80vh !important;
 	--panel-background: var(--gnome-popover-background) !important;
 	font:inherit !important;
+	border-radius: 9px !important;
+	border: 0 !important;
+	border-color: var(--gnome-popover-border-color) !important;
 }
 
 /* Style popovers */
@@ -52,6 +55,7 @@ panel[type=arrow] {
 .panel-header, .PanelUI-subView,
 .panel-subview-body, #widget-overflow-mainView, #protections-popup-footer,
 panelview {
+	border: 0 !important;
 	background: none !important;
 }
 
@@ -60,7 +64,7 @@ panelview {
 	font:inherit !important;
 	border-color: var(--gnome-popover-border-color) !important;
 	border-radius: 9px !important;
-	box-shadow: var(--gnome-popover-shadow) !important;
+	/*box-shadow: var(--gnome-popover-shadow) !important;*/
 	padding: 5,5px !important;
 	color: var(--gnome-toolbar-color) !important;
 }
@@ -83,32 +87,39 @@ panelview {
 .panel-header {
 	padding: 0 0 10px 0 !important;
 }
+
 .panel-header + toolbarseparator,
 #identity-popup-mainView-panel-header + toolbarseparator,
 #permission-popup-mainView-panel-header + toolbarseparator,
 #protections-popup-mainView-panel-header-section + toolbarseparator {
 	display: none !important;
 }
+
 .panel-footer {
 	background-color: transparent !important;
 	display: flex;
 	justify-content: flex-end;
 	padding-top: 0px !important;
 }
+
 .panel-footer.panel-footer-menulike {
 	border-top: 0 !important;
 	margin-top: 8px !important;
 }
+
 .panel-footer toolbarseparator {
 	display: none !important;
 }
+
 .proton-zap {
 	border-image: unset !important;
 }
+
 .panel-subview-body,
 .panel-subview-body > .panel-subview-body {
 	padding: 0 !important;
 }
+
 .panel-subview-footer {
 	margin-top: 10px !important;
 }

@@ -316,6 +316,7 @@
 #protections-popup-footer  {
 	padding: 0 !important;
 }
+
 /* Fix popup display*/
 #protections-popup-footer  {
 	display: inherit;
@@ -323,6 +324,7 @@
 	flex-wrap: wrap;
 	margin: 4px;
 }
+
 #protections-popup-show-report-stack {
 	width: 100% !important;
 	display: flex;
@@ -341,12 +343,15 @@
 	padding: 0 !important;
 	justify-content: flex-start !important;
 }
+
 #protections-popup-tp-switch:not([enabled])[showdotindicator]::after {
 	display: none !important;
 }
+
 #protections-popup-tp-switch:hover {
 	border-color: var(--gnome-switch-border-color) !important;
 }
+
 #protections-popup-tp-switch::before {
 	position: absolute !important;
 	top: 0px;
@@ -366,9 +371,11 @@
 	border-color: var(--gnome-switch-active-border-color) !important;
 	padding-inline-start: 24px !important;
 }
+
 #protections-popup-tp-switch[enabled]:hover {
 	border-color: var(--gnome-switch-active-border-color) !important;
 }
+
 #protections-popup-tp-switch[enabled]::before {
 	border-color: var(--gnome-switch-active-slider-border-color) !important;
 	left: 24px;
