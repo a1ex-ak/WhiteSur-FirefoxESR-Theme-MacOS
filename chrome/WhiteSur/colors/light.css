@@ -170,5 +170,11 @@
 		--gnome-tabbar-tab-active-background: #53377a; /* Hardcoded color */
 		--gnome-tabbar-tab-active-background-contrast: #86689e; /* Hardcoded color */
 		--gnome-tabbar-tab-active-hover-background: #754F93; /* Hardcoded color */
+
+		/* Private and backdrop colors */
+		&:-moz-window-inactive {
+			--gnome-tabbar-tab-hover-background: #E5CBF8; /* Hardcoded color */
+			--gnome-tabbar-tab-active-background: #E2C9F5; /* Hardcoded color */
+		}
 	}
 }
