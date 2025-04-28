@@ -30,6 +30,6 @@
 #customization-footer::before {
 	background: url("icons/icon.svg") no-repeat;
 	background-size: contain;
-	content: "Firefox WhiteSur MacOS theme";
+	content: "Firefox WhiteSur MacOS v137.0.2";
 	padding: 10px 10px 10px 50px;
 }
