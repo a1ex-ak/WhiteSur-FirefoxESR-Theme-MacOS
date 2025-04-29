@@ -364,6 +364,67 @@ panelview > toolbarseparator:not([orient="vertical"]),
 	}
 }
 
+/* fix padding for menu items*/
+#appMenu-popup panelview,
+#PanelUI-fxa {
+	padding: 8px !important;
+}
+
+/* fix menu button padding and alignment*/
+#PanelUI-menu-button {
+	padding-inline-end: 0px !important;
+	padding-left: 0px !important;
+}
+
+/* Fix alignment of menu*/
+panel[type="arrow"][side="top"],
+panel[type="arrow"][side="bottom"] {
+	margin-inline: -20px !important;
+}
+
+/* Update close button styling */
+:root[dialogroot], :host(dialog) {
+	--in-content-page-background: var(--gnome-menu-background) !important;
+  }
+  /* Cancel or secondary */
+  .dialog-button-box>button{
+	background-color: var(--gnome-button-active-background-alt) !important;
+	color: var(--gnome-button-menulist-color) !important;
+	border: 1px solid var(--gnome-button-active-background-alt-border);
+  }
+  xul|button:not([disabled="true"]):hover{
+  	background-color: var(--gnome-button-active-background-alt-hover) !important;
+	color: var(--gnome-button-menulist-color) !important;
+	border: 1px solid var(--gnome-button-active-background-alt-border);
+	border-color: var(--gnome-button-active-border-color) !important;
+  }
+  /* Quit or primary button */
+  xul|button[default]{
+	background-color: var(--gnome-button-suggested-action-background) !important;
+	color: var(--gnome-button-menulist-color) !important;
+	border-color: var(--gnome-button-suggested-action-border-color) !important;
+  }
+  xul|button[default]:not([disabled="true"]):hover{
+	background-color: var(--gnome-button-suggested-action-hover-background) !important;
+	color: var(--gnome-button-menulist-color) !important;
+	border-color: var(--gnome-button-suggested-action-border-color) !important;
+  }
+  button:focus-visible{
+	outline: 2px solid var(--theme-primary-color) !important;
+  }
+/*  checkbox */
+.checkbox-check[checked]{
+	background-color: var(--theme-primary-color) !important;
+	color: var(--theme-alt-color) !important;
+}
+  checkbox:not([disabled="true"]):hover > .checkbox-check[checked] {
+	background-color: var(--gnome-switch-active-background, color-mix(in srgb, currentColor 12.5%, var(--theme-primary-color))) !important;
+  }
+browser[primary="true"][tabDialogShowing="true"],
+#main-window[window-modal-open="true"] > body > #browser{
+  filter: blur(5px)
+}
+
 /* Auto complete popups */
 panel[type="autocomplete-richlistbox"] {
 	background: none !important;
