@@ -8,7 +8,7 @@ menupopup, panel {
 	-moz-appearance: none !important;
 	--panel-background: var(--gnome-menu-background) !important;
 	--panel-border-radius: 8px !important;
-	--panel-padding: 6px !important;
+	--panel-padding: 3px !important;
 	--panel-shadow: var(--gnome-popover-shadow), 0 0 0 1px var(--gnome-popover-border-color) !important;
 	/* --panel-shadow-margin: 3px 8px 13px !important; */
 	--panel-separator-color: var(--gnome-popover-separator-color) !important;
@@ -118,6 +118,7 @@ panel[type="arrow"] {
 .panel-header, .PanelUI-subView,
 .panel-subview-body, #widget-overflow-mainView, #protections-popup-footer,
 panelview {
+	border: 0 !important;
 	background: none !important;
 }
 
@@ -148,6 +149,7 @@ panelview {
 .panel-header {
 	padding: 0 0 10px 0 !important;
 }
+
 .panel-header + toolbarseparator,
 #identity-popup-mainView-panel-header + toolbarseparator,
 #permission-popup-mainView-panel-header + toolbarseparator,
@@ -203,7 +205,7 @@ menuitem, menupopup menu,
 	border-radius: 6px !important;
 	color: var(--gnome-toolbar-color) !important;
 	font: menu !important;
-	padding: 0 6px !important;
+	padding: 0 1px !important;
 	min-height: 28px !important;
 	margin: 0 !important;
 }
@@ -315,28 +317,35 @@ toolbarseparator, menuseparator {
 	appearance: none !important;
 /*	border-color: var(--gnome-popover-separator-color) !important;*/
 }
+
 #PlacesToolbar menupopup[placespopup="true"] menuseparator {
 	border: none !important;
 	padding: 0 !important;
 }
+
 toolbarseparator, menuseparator::before {
 	border-top: 1px solid var(--gnome-popover-separator-color) !important;
 }
+
 menupopup menuseparator {
 	border: none !important;
 	margin: 4px 0 !important;
 }
+
 toolbarseparator[orient="vertical"] {
 	margin: 0 4px !important;
 }
+
 .panel-subview-body + toolbarseparator:not([orient="vertical"]) {
 	margin: 0 0 4px !important;
 }
+
 panelview > toolbarseparator:not([orient="vertical"]),
 #identity-popup-clear-sitedata-footer toolbarseparator:not([orient="vertical"]),
 #identity-popup-more-info-footer toolbarseparator:not([orient="vertical"]){
 	margin: 4px 6px !important;
 }
+
 #identity-popup-clear-sitedata-footer toolbarseparator:not([orient="vertical"]) {
 	margin-top: 0 !important;
 }
