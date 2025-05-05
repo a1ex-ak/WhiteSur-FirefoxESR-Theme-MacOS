@@ -100,7 +100,11 @@
 	--gnome-inactive-urlbar-color: #323232;
 	--gnome-focused-urlbar-border-color: #5683DA;
 	--gnome-focused-urlbar-highlight-color: #6592E9;
-	--gnome-private-urlbar-background: #684499; /*#e6c2ff;*/
+	--gnome-private-urlbar-background: #684499;
+	--gnome-private-urlbar-border-color: rgb(171, 128, 207);
+	--gnome-private-hover-urlbar-border-color: #9568bd;
+	--gnome-private-inactive-urlbar-border-color: #a674d3;
+	--gnome-private-focused-urlbar-border-color: #c0a8fc;
 
 	/* Tabs */
 	--gnome-tabbar-tab-background: #E5E5E5;
@@ -158,6 +162,10 @@
 		/* URLbar */
 		--gnome-urlbar-background: var(--gnome-private-urlbar-background) !important;
 		--gnome-inactive-urlbar-background: var(--gnome-private-urlbar-background) !important;
+		--gnome-inactive-urlbar-background: var(--gnome-private-urlbar-background) !important;
+		--gnome-hover-urlbar-border-color: var(--gnome-private-hover-urlbar-border-color) !important;
+		--gnome-inactive-urlbar-border-color: var(--gnome-private-inactive-urlbar-border-color) !important;
+		--gnome-focused-urlbar-border-color: var(--gnome-private-focused-urlbar-border-color) !important;
 
 		/* Toolbars */
 		--gnome-toolbar-background: #53377a !important;
