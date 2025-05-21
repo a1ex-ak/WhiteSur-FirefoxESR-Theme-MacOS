@@ -113,3 +113,6 @@ Thanks!
 ### MacOS
 ![Preview](githubpreview/whitesur.gif?raw=true)
 
+## Credits
+
+This project is based on the original [Firefox WhiteSur theme](https://github.com/AdamXweb/WhiteSurFirefoxThemeMacOS) by AdamXweb. Additional adaptations and maintenance by [a1ex-ak](https://github.com/a1ex-ak).
