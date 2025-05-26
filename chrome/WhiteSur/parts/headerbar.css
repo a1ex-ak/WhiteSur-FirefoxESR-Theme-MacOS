@@ -28,7 +28,7 @@
 	background: none !important;
 	-moz-appearance: none !important;
 	border-radius: 8px !important;
-	padding: 0 4px !important;
+	padding: 0 6px !important;
 	min-height: 26px !important;
 	min-width: 26px !important;
 	color: var(--gnome-toolbar-color) !important;
@@ -64,7 +64,7 @@ toolbar .toolbarbutton-1{
 
 #nav-bar #back-button:not(#hack),
 #nav-bar #forward-button:not(#hack) {
-	padding: 0 4px !important;
+	padding: 0 1px !important;
 	width: 32px !important;
 	min-width: 32px !important;
 }
@@ -86,7 +86,7 @@ toolbar .toolbarbutton-1{
 	box-shadow: inset 0 0 0 1px var(--gnome-hover-urlbar-border-color) !important;
 	border-radius: 8px !important;
 	color: var(--gnome-urlbar-color) !important;
-	padding: 0 6px !important;
+	padding: 0 1px !important;
 	height: 29px !important;
 	max-height: 29px !important;
 	transition: box-shadow 200ms;
