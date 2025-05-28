@@ -39,7 +39,7 @@ toolbarspring {
 
 /* URL bar */
 #urlbar {
-	/* --urlbar-height: 3px !important; */
+	--urlbar-height: 32px !important;
 	--urlbar-container-height: 32px !important;
 	--urlbar-toolbar-height: 32px !important;
 	--urlbar-inner-padding: 0 !important;
