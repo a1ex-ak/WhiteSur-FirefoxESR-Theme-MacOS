@@ -28,7 +28,7 @@
 	background: none !important;
 	-moz-appearance: none !important;
 	border-radius: 8px !important;
-	padding: 0 1px !important;
+	padding: 0 4px !important;
 	min-height: 26px !important;
 	min-width: 26px !important;
 	color: var(--gnome-toolbar-color) !important;
@@ -59,7 +59,7 @@ toolbar .toolbarbutton-1{
 
 /* Buttons with margins */
 #nav-bar toolbarbutton:not(#urlbar-zoom-button):not(#allTabsMenu-searchTabs) {
-	margin: 0 1px !important;
+	margin: 0 2px !important;
 }
 
 #nav-bar #back-button:not(#hack),
