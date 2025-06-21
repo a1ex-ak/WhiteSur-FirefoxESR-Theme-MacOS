@@ -102,6 +102,18 @@ toolbar .toolbarbutton-1{
 	transition-duration: 100ms;
 }
 
+#urlbar[breakout] {
+	position: static !important; 
+}
+
+/* New tab url bar focusing */
+#urlbar[focused]:not([suppress-focus-border]) > #urlbar-background, 
+#searchbar:focus-within {
+    outline: none !important;
+}
+
+#urlbar[breakout][breakout-extend] #urlbar-input-container,
+#urlbar[breakout][breakout-extend] #urlbar-input-container:hover,
 #urlbar[breakout][breakout-extend] .urlbar-input-container,
 #urlbar[breakout][breakout-extend] .urlbar-input-container:hover {
 	background: none !important;
@@ -109,8 +121,8 @@ toolbar .toolbarbutton-1{
 	padding: 0 6px !important;
 }
 
-#nav-bar #searchbar:focus-within,
-#urlbar[focused] .urlbar-input-container {
+#nav-bar #searchbar:focus-within {
+/* #urlbar[focused] .urlbar-input-container { */
 	border: none !important;
 	background: var(--gnome-urlbar-background) !important;
 	box-shadow: inset 0 0 0 2px var(--gnome-focused-urlbar-highlight-color) !important;
