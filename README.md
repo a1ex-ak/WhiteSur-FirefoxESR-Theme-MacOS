@@ -1,4 +1,4 @@
-## WhiteSur-based Firefox theme for MacOS
+## WhiteSur-based Firefox-ESR theme for MacOS
 <p align="center">
 <img width="120" src="https://github.com/a1ex-ak/WhiteSur-MacOS-Firefox-Theme/blob/main/githubpreview/safarifirefox.png?raw=true">
 	<br>
