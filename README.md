@@ -8,7 +8,7 @@ A <code>MacOS</code> & <code>Windows</code> Firefox theme to look more like Safa
 
 ## Description
 
-Aim is to make Firefox look more like MacOS Safari.\
+Aim is to make Firefox-ESR look more like MacOS Safari.\
 This is a CSS theme adapted to work on MacOS from the Linux GTK theme.\
 Based on https://github.com/vinceliuice/WhiteSur-firefox-theme and https://github.com/AdamXweb/WhiteSurFirefoxThemeMacOS \
 (This is a quick modification, and is not written from scratch.)
@@ -50,7 +50,7 @@ This will give you a look like this:
 
 Copy `chrome` and `configuration` folders into your Firefox Profile Directory
 
-To find your Firefox Profile Directory you can:
+To find your Firefox-ESR Profile Directory you can:
 
 1. Go to `about:support` in Firefox.
 2. Application Basics > Profile Directory > Open Directory.
@@ -105,10 +105,6 @@ If you've found a new bug, please report it as a new issue with the templates pr
 Thanks!
 
 ## Screenshots
-
-### Windows
-![Preview](githubpreview/whitesurwindows.gif?raw=true)
-
 
 ### MacOS
 ![Preview](githubpreview/whitesur.gif?raw=true)
